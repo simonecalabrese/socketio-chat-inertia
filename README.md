@@ -61,3 +61,24 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # socketio-chat-inertia
+
+## Installation
+
+```bash
+git clone https://github.com/SimoneC03/socketio-chat-inertia
+cd socketio-chat-inertia
+npm install
+npm run dev
+# or: npm run watch
+composer install
+```
+### Configure MySql Database
+Copy the .env.example file, rename to .env and insert your db details
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=socketio_chat_inertia
+DB_USERNAME=root
+DB_PASSWORD=
+```

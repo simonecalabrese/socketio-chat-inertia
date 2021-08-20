@@ -82,3 +82,16 @@ DB_DATABASE=socketio_chat_inertia
 DB_USERNAME=root
 DB_PASSWORD=
 ```
+
+### Create DB
+Create a new database called <code>socketio_chat_inertia</code> or anything you've put in the DB_DATABASE key
+
+### Migrate tables
+```bash
+php artisan migrate
+```
+
+### Serving on 8000 local port (127.0.0.1:8000)
+```bash
+php artisan serve
+```

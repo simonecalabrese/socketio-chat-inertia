@@ -15,7 +15,6 @@ Real time Chat application using Laravel 8.0 with jetstream & Inertia stack. Thi
 You can configure the server port in the socketio-chat-inertia\resources\views\app.blade.php file at:
 ```bash
  const socket = io("http://localhost:YOUR_PORT");
- //const socket = io("https://socketio-server-inertia.herokuapp.com/");
 ```        
 
 ## Installation

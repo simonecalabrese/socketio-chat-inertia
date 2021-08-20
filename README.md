@@ -22,10 +22,11 @@ You can configure the server port in the socketio-chat-inertia\resources\views\a
 ```bash
 git clone https://github.com/SimoneC03/socketio-chat-inertia
 cd socketio-chat-inertia
+composer install
 npm install
 npm run dev
 # or: npm run watch
-composer install
+
 ```
 ### Configure MySql Database
 Copy the .env.example file, rename to .env and insert your db details

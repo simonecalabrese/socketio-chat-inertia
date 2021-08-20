@@ -22,8 +22,8 @@
         @inertia
     <script src="https://cdn.socket.io/3.1.3/socket.io.min.js"></script>
     <script>
-        //const socket = io("http://localhost:3000");
-        const socket = io("https://socketio-server-inertia.herokuapp.com/");
+        const socket = io("http://localhost:3000");
+        //const socket = io("https://socketio-server-inertia.herokuapp.com/");
     </script>
     </body>
 </html>

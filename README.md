@@ -16,6 +16,8 @@ You can configure the server port in the socketio-chat-inertia\resources\views\a
 ```Javascript
  const socket = io("http://localhost:YOUR_PORT")
 ```        
+## Security
+This minimal chat application is provided with all Laravel web security features (CSRF, SQL injection, XSS, ...)  but it's a DEMO project so there's no end-to-end encryption between users conversations.
 
 ## Installation
 

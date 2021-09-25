@@ -1,9 +1,8 @@
 <?php
-
-use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
+
+use App\Http\Controllers\ChatController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,10 +16,12 @@ use Inertia\Inertia;
 
 Route::redirect('/', '/chat');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/chat', [App\Http\Controllers\ChatController::class, 'index'])->name('chat');
-Route::middleware(['auth:sanctum', 'verified'])->post('/chat', [App\Http\Controllers\ChatController::class, 'createMessage']);
-Route::middleware(['auth:sanctum', 'verified'])->patch('/user/updateStatus', [App\Http\Controllers\ChatController::class, 'updateUserStatus']);
-Route::middleware(['auth:sanctum', 'verified'])->get('/chat/users/list', [App\Http\Controllers\ChatController::class, 'getUserChatList']);
-Route::middleware(['auth:sanctum', 'verified'])->post('/chat/privateMessages', [App\Http\Controllers\ChatController::class, 'postPrivateMessages']);
 
+Route::middleware(['auth:sanctum', 'verified'])->patch('/user/updateStatus', [ChatController::class, 'updateUserStatus']);
 
+Route::middleware(['auth:sanctum', 'verified'])->prefix('chat')->group(function () {
+  Route::get('/', [ChatController::class, 'index'])->name('chat');
+  Route::post('/', [ChatController::class, 'createMessage']);
+  Route::get('/users/list', [ChatController::class, 'getUserChatList']);
+  Route::post('/privateMessages', [ChatController::class, 'postPrivateMessages']);
+});

@@ -1,0 +1,17 @@
+{
+  "name": "socketio-server",
+  "version": "1.0.0",
+  "description": "Server socketio for laravel-inertia",
+  "main": "socketio.js",
+  "scripts": {
+    "start": "nodemon socketio",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simone Calabrese",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "socket.io": "^4.1.1"
+  }
+}

@@ -11,7 +11,7 @@
 # socketio-chat-inertia
 
 ## Introduction
-Real time Chat application using Laravel 8.0 with jetstream & Inertia stack. This application requires a socketio server that you can find <a href="https://github.com/SimoneC03/socketio-server.git">HERE</a>.
+Real time Chat application using Laravel 8.0 with jetstream & Inertia stack.
 You can configure the server port in the socketio-chat-inertia\resources\views\app.blade.php file at:
 ```Javascript
  const socket = io("http://localhost:YOUR_PORT")
